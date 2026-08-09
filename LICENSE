@@ -1,0 +1,80 @@
+Icarus — Proprietary Software License
+Copyright (c) 2026 Remezzo. All rights reserved.
+
+Icarus ("the Software") — including its source code, compiled builds, web and UI
+assets, documentation, and all associated materials — is the exclusive property of
+its author ("the Author"). The Software is made publicly viewable and available for
+download as a courtesy. It is NOT open-source software, and no rights are granted
+except those expressly stated below.
+
+------------------------------------------------------------------------------
+PLAIN-LANGUAGE SUMMARY  (the formal terms below control in case of any conflict)
+
+  You MAY:   download and use the official Icarus release, and read the source
+             code for reference.
+  You MAY NOT: use Icarus, or any part of its code, in your own projects — you
+             may not copy, modify, reuse, redistribute, or build on it.
+  All rights are reserved by the Author.
+------------------------------------------------------------------------------
+
+1. DEFINITIONS
+   "Software" means Icarus in every form: its source code, object and compiled
+   code, the released executable(s) and any runtimes bundled with them, web/UI
+   assets, configuration, and documentation. "You" means the individual or entity
+   exercising the permission granted in Section 2.
+
+2. LIMITED PERMISSION
+   Subject to Your full and continuing compliance with this License, the Author
+   grants You a personal, non-exclusive, non-transferable, and revocable permission
+   to (a) download and run the official, unmodified released build of the Software
+   for Your own personal use, and (b) view the publicly published source code for
+   reference only. No other rights are granted.
+
+3. RESTRICTIONS
+   Except as expressly permitted in Section 2, You may NOT, in whole or in part,
+   directly or indirectly:
+     (a) use the Software, or any portion of its source code, structure, logic, or
+         design, in any other software, product, project, or work of any kind —
+         whether commercial or non-commercial, closed- or open-source, free or paid;
+     (b) copy, reproduce, modify, adapt, translate, or create derivative works of
+         the Software;
+     (c) distribute, publish, mirror, sublicense, sell, rent, lease, lend, or
+         otherwise make the Software available to any third party;
+     (d) reverse engineer, decompile, disassemble, deobfuscate, or otherwise attempt
+         to reconstruct or discover the source code of any compiled build, except to
+         the exact extent this restriction cannot be prohibited under applicable law;
+     (e) remove, alter, or obscure any copyright, license, ownership, or attribution
+         notice in or on the Software.
+
+4. RESERVATION OF RIGHTS
+   All rights not expressly granted in Section 2 are reserved by the Author. No
+   right is granted by implication, estoppel, or otherwise. This License transfers
+   no ownership of, or intellectual-property right in, the Software.
+
+5. NO WARRANTY
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+   FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
+
+6. LIMITATION OF LIABILITY
+   TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE AUTHOR
+   BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+   CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE
+   SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. You use the Software
+   entirely at Your own risk.
+
+7. TERMINATION
+   This License and the permission in Section 2 terminate automatically and
+   immediately if You breach any term. Upon termination You must cease all use of
+   the Software and destroy all copies in Your possession or control.
+
+8. NO AFFILIATION
+   Icarus is an independent, unofficial tool. It is not affiliated with, endorsed
+   by, or sponsored by Cygames, Inc. "Umamusume: Pretty Derby" and all related names
+   and marks are the property of their respective owners. Your use of the Software
+   is Your own responsibility and may be subject to the terms of service of the
+   platforms it interacts with.
+
+9. PERMISSIONS BEYOND THIS LICENSE
+   If You want to do something this License does not allow, you must ask. Contact the
+   Author at https://github.com/Remezzo/Umamusume-Icarus for written permission.
