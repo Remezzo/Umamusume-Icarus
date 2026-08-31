@@ -200,7 +200,13 @@ Icarus is one tool in a family. Every one speaks the game's own API — the same
 - **[Overseer](https://github.com/Remezzo/Umamusume-Overseer)** — a companion overlay with **live translation** in 25+ languages, Hyper Skip, performance enhancements, Team Trials tools, career tracking and event/training/race prediction. For both Global and Japanese Steam clients.
 - **[Un-Follower](https://github.com/Remezzo/Umamusume-Un-Follower)** — reads your follower list from the Cygames server, works out who's inactive, and removes them through the game's own `friend/un_follower` API.
 - **[Club Manager](https://github.com/Remezzo/Umamusume-Fan-Tracker)** — tracks every club you care about from uma.moe and posts a matte-black leaderboard to Discord on its own schedule — quotas, month-end projections, roster changes, milestones and trainer lookups, all unattended.
-- **[Navigator](https://github.com/Remezzo/Umamusume-Navigator)** — the developer tool that captures and decodes the game's native API traffic. It's what the rest of the suite is built on.
+- **Navigator** — the developer tool that captures and decodes the game's native API traffic. It's what the rest of the suite is built on.
+
+---
+
+<div align="center">
+
+**Made by the Icarus team · [Join us on Discord](https://discord.gg/wpbd3hTBDc)**
 
 </div>
 
