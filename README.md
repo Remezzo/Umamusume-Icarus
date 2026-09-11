@@ -1,16 +1,38 @@
 <div align="center">
 
+<img src="public/icarus.png" alt="Icarus" width="120" />
+
 # Icarus
 
-### The complete automation platform for Umamusume: Pretty Derby
+### Complete careers, run for you. Every scenario. All night. Forever.
+
+**Icarus is a headless bot that plays Umamusume: Pretty Derby through the game's own API — it signs in, starts a career, scores every training against your model, races your schedule, answers events, spends the skill points, banks the parent, and starts the next one.** No screen-scraping, no OCR, no window to babysit: it speaks msgpack to the servers directly and reads your own `master.mdb` for card, skill, race and event data.
 
 <!--DEVONLY:START-->
-**Full career automation · Native game API · Multi-account · Multi-instance · Zero screen-scraping**
+[![Download](https://img.shields.io/badge/Download-Icarus.exe-D4A017?style=for-the-badge)](https://github.com/Remezzo/Umamusume-Icarus/releases/latest)
+&nbsp;
+[![Discord](https://img.shields.io/badge/Discord-Join_the_Icarus_hub-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/wpbd3hTBDc)
+
+![Platform](https://img.shields.io/badge/platform-Windows-0078D6)
+![Version](https://img.shields.io/badge/release-5.3.2-D4A017)
+![Signed updates](https://img.shields.io/badge/updates-Ed25519_signed-1f7a4d)
+![Scenarios](https://img.shields.io/badge/scenarios-URA_%C2%B7_Unity_Cup_%C2%B7_MANT_%C2%B7_Grand_Live-2b2b2b)
+![Accounts](https://img.shields.io/badge/accounts-multi_%C2%B7_multi--instance-2b2b2b)
+![License](https://img.shields.io/badge/license-Proprietary-c02626)
 <!--DEVONLY:END-->
 <!--PUBLICONLY
-**Full career automation · Native game API · Zero screen-scraping**
+[![Download](https://img.shields.io/badge/Download-Icarus.exe-D4A017?style=for-the-badge)](https://github.com/Remezzo/Umamusume-Icarus/releases/latest)
+&nbsp;
+[![Discord](https://img.shields.io/badge/Discord-Join_the_Icarus_hub-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/wpbd3hTBDc)
+
+![Platform](https://img.shields.io/badge/platform-Windows-0078D6)
+![Version](https://img.shields.io/badge/release-5.3.2-D4A017)
+![Signed updates](https://img.shields.io/badge/updates-Ed25519_signed-1f7a4d)
+![Scenarios](https://img.shields.io/badge/scenarios-URA_%C2%B7_Unity_Cup_%C2%B7_MANT_%C2%B7_Grand_Live-2b2b2b)
+![License](https://img.shields.io/badge/license-Proprietary-c02626)
 PUBLICONLY-->
 
+<sub>Windows · Steam · Global client · part of the Icarus Suite</sub>
 
 </div>
 
@@ -269,5 +291,3 @@ Icarus is one tool in a family. Every one of them speaks the game's own API — 
 **[Discord](https://discord.gg/wpbd3hTBDc)**
 
 </div>
-
-
