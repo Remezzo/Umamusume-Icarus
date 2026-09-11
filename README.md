@@ -8,19 +8,6 @@
 
 **Icarus is a headless bot that plays Umamusume: Pretty Derby through the game's own API — it signs in, starts a career, scores every training against your model, races your schedule, answers events, spends the skill points, banks the parent, and starts the next one.** No screen-scraping, no OCR, no window to babysit: it speaks msgpack to the servers directly and reads your own `master.mdb` for card, skill, race and event data.
 
-<!--DEVONLY:START-->
-[![Download](https://img.shields.io/badge/Download-Icarus.exe-D4A017?style=for-the-badge)](https://github.com/Remezzo/Umamusume-Icarus/releases/latest)
-&nbsp;
-[![Discord](https://img.shields.io/badge/Discord-Join_the_Icarus_hub-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/wpbd3hTBDc)
-
-![Platform](https://img.shields.io/badge/platform-Windows-0078D6)
-![Version](https://img.shields.io/badge/release-5.3.2-D4A017)
-![Signed updates](https://img.shields.io/badge/updates-Ed25519_signed-1f7a4d)
-![Scenarios](https://img.shields.io/badge/scenarios-URA_%C2%B7_Unity_Cup_%C2%B7_MANT_%C2%B7_Grand_Live-2b2b2b)
-![Accounts](https://img.shields.io/badge/accounts-multi_%C2%B7_multi--instance-2b2b2b)
-![License](https://img.shields.io/badge/license-Proprietary-c02626)
-<!--DEVONLY:END-->
-<!--PUBLICONLY
 [![Download](https://img.shields.io/badge/Download-Icarus.exe-D4A017?style=for-the-badge)](https://github.com/Remezzo/Umamusume-Icarus/releases/latest)
 &nbsp;
 [![Discord](https://img.shields.io/badge/Discord-Join_the_Icarus_hub-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/wpbd3hTBDc)
@@ -30,7 +17,6 @@
 ![Signed updates](https://img.shields.io/badge/updates-Ed25519_signed-1f7a4d)
 ![Scenarios](https://img.shields.io/badge/scenarios-URA_%C2%B7_Unity_Cup_%C2%B7_MANT_%C2%B7_Grand_Live-2b2b2b)
 ![License](https://img.shields.io/badge/license-Proprietary-c02626)
-PUBLICONLY-->
 
 <sub>Windows · Steam · Global client · part of the Icarus Suite</sub>
 
@@ -42,31 +28,22 @@ Icarus plays your careers. Not by watching pixels and clicking at them — by sp
 
 Everything runs behind a local dashboard in your browser. Nothing is exposed to the network, and no account credentials leave your machine.
 
-<!--DEVONLY:START-->
-> [!IMPORTANT]
-> ### Quick start — double-click `Start Icarus.bat`
->
-> First launch builds an isolated Python environment, installs every dependency from **prebuilt wheels** (no Visual C++ Build Tools required), fetches **Node.js** if it's missing, then starts the bot and opens the dashboard. Every launch after that is instant.
->
-> Needs internet on the first run. If Python isn't installed and `winget` is available, the launcher handles it; otherwise grab Python 3.10–3.13 from [python.org](https://www.python.org/downloads/) and tick **"Add python.exe to PATH"**.
-<!--DEVONLY:END-->
-<!--PUBLICONLY
 > [!IMPORTANT]
 > ### Quick start — double-click `Icarus.exe`
 >
 > That is the whole setup. Python, Node.js and every dependency are already
-> inside this folder; nothing needs installing and nothing is downloaded. The
-> dashboard opens in your browser at <http://127.0.0.1:1717>.
+> inside that one file — there is nothing to install and nothing to extract.
+> The dashboard opens in your browser at <http://127.0.0.1:1717>.
 >
 > Windows will warn you the first time — the build is signed, but with our own
 > certificate rather than one Microsoft trusts, so SmartScreen has no reputation
-> to go on. **More info → Run anyway.** If your antivirus quarantines anything
-> in this folder, add the folder to its exclusions and extract the zip again.
+> to go on. **More info → Run anyway.** If your antivirus quarantines it, add
+> the file to your exclusions and download it again.
 >
-> Keep the whole folder together. `Icarus.exe` reads `data`, `public`, `node`
-> and `node_modules` from beside itself, and a partial extraction is the most
-> common cause of a sign-in that will not start.
-PUBLICONLY-->
+> Give it a folder of its own before the first run. Icarus unpacks `data`,
+> `public`, `node` and `node_modules` beside itself and keeps your presets,
+> sign-in and run history there — so put it somewhere it can live, rather
+> than your Downloads folder.
 
 ---
 
@@ -123,13 +100,6 @@ Start on a chosen day and time, run your dailies, optionally auto-cull the veter
 ### Pause & Resume
 Hold a career at the next safe point without ending it. Do your dailies, clear out veterans, delete a career, take a manual action — then resume exactly where the run left off. No restart, no lost progress.
 
-<!--DEVONLY:START-->
-### Multi-Account
-Save any number of Steam accounts and switch the active one from the dashboard. Login, game save and per-account state travel together, and a switch that would leave the wrong session behind is refused rather than half-applied.
-
-### Multi-Instance
-Run several profiles side by side, each with its own port, config, presets, run history and account — plus a Fleet view that watches all of them at once.
-<!--DEVONLY:END-->
 
 ### Discord Webhooks
 Rich embeds when a career finishes and when the bot stops: grade, rank points, final stats, fans, skills bought, races run, inheritance sparks, session runtime, session start and end times, and where the run placed in the **current session's** ranking.
@@ -152,9 +122,7 @@ Every completed career is recorded: grade, rank score, stats, fans, wins, races,
 Colour-vision-deficiency palettes, a high-contrast mode, adjustable text size and reduced motion — applied before first paint and remembered between sessions.
 
 ### Modern UI
-A matte-black dashboard built for information density: <!--DEVONLY:START-->live resource HUD (TP · RP · Carrots · Gold · Clocks), per-turn decision log with reasoning, run dashboard, bond levels, a filterable console with one-click export, and themes.<!--DEVONLY:END--><!--PUBLICONLY
-live resource HUD (TP · RP · Carrots · Gold · Clocks), per-turn decision log with reasoning, run dashboard, bond levels, and a filterable console with one-click export.
-PUBLICONLY-->
+A matte-black dashboard built for information density: live resource HUD (TP · RP · Carrots · Gold · Clocks), per-turn decision log with reasoning, run dashboard, bond levels, and a filterable console with one-click export.
 
 ### Reliability and verification
 Every release ships with a regression suite of more than 7,600 checks, and the packaged build is not signed until it passes a verifier chain that boots the real executable: 198 build-parity checks, 140 non-negotiables run three times (sign-in failure modes, pacing lock, auth capture bundled and functional), and a 168-check sweep of every page and endpoint. Destructive actions have hard guards — a manual delete can never remove an in-game favourite, auto-cull skips any veteran whose rank did not load, a data regeneration can never blank the skill table, and a retried purchase can never spend twice.
@@ -164,29 +132,13 @@ Every release ships with a regression suite of more than 7,600 checks, and the p
 ## Requirements
 
 - **Windows**, with the Umamusume (Steam) client installed and running at first login — Linux works too via Wine, see [Running on Linux (Wine)](#running-on-linux-wine)
-<!--DEVONLY:START-->
-- **Python 3.10–3.13** and **Node.js** — the launcher installs both if they're missing
-<!--DEVONLY:END-->
-<!--PUBLICONLY
-- **Nothing else.** Python, Node.js and every dependency ship inside this folder.
-PUBLICONLY-->
+- **Nothing else.** Python, Node.js and every dependency ship inside the exe.
 - Internet for first-time setup and updates
 
-<!--DEVONLY:START-->
-> [!TIP]
-> These requirements apply to running **from source**, which is what this repository and `Start Icarus.bat` give you. The packaged **Icarus.zip** on the Releases page bundles Python, Node.js and every dependency — if you aren't developing against the code, that build needs none of the above.
->
-> Running from source and seeing `did not find executable at ...\python.exe`? The `.venv` was built against a Python that has since moved, been upgraded or been uninstalled. The launcher now detects that and rebuilds automatically; on older copies, delete the `.venv` folder and run it again.
-<!--DEVONLY:END-->
 
 ## Using it
 
-<!--DEVONLY:START-->
-1. Double-click **`Start Icarus.bat`**. The dashboard opens at <http://127.0.0.1:1616>.
-<!--DEVONLY:END-->
-<!--PUBLICONLY
 1. Double-click **`Icarus.exe`**. The dashboard opens at <http://127.0.0.1:1717>.
-PUBLICONLY-->
 2. **Log in**, then pick your trainee, support deck and inheritance on **Setup**.
 3. Tune your preset across **Training**, **Racing**, **Scenario** and **Skills**.
 4. Press **Run Career** — or configure **Auto Restart**, **Character Rotation** or the **Scheduler** and walk away.
@@ -206,23 +158,12 @@ npm install
 python main.py
 ```
 
-<!--DEVONLY:START-->
-## Code layout (for contributors)
-
-`main.py` is bootstrap and wiring only: config, the FastAPI app and middleware, startup hooks, the sign-in seams and the pacing lock. Everything else lives in `career_bot/`:
-
-- `routers/` — the HTTP surface, one module per feature (career, settings, presets, veterans, deck, events, schedule, ...). Handlers read shared state through `career_bot/app_context.py`.
-- `run_loop.py` — the career loop, start path, scheduler and character rotation; `dashboard_state.py`, `preset_helpers.py`, `borrow_gate.py`, `run_records.py`, `gamedata_helpers.py`, `event_helpers.py` — the domain helpers behind them.
-- `runner.py`, `scenarios/`, `scoring.py` — the in-career decision engine; `uma_api/` — the game protocol client.
-
-`python run_tests.py` runs the whole suite; `career_bot/test_route_inventory.py` proves every route still registers where it always did, and `career_bot/test_module_globals_resolve.py` proves no module refers to a name it no longer defines. See `docs/REFACTOR-PLAN.md` and `docs/JP-MERGE-MAP.md` for how the layout came to be.
-<!--DEVONLY:END-->
 
 ## Running on Linux (Wine)
 
 Icarus targets Windows, but it runs well under [Wine](https://www.winehq.org/). The steps below are written for Arch-based distros; on Debian/Ubuntu substitute `sudo apt install` for `sudo pacman -S`.
 
-1. **Get the files.** Download the release zip from this repository and extract it wherever you like — a dedicated folder for the Icarus toolkit keeps things tidy.
+1. **Get the file.** Download `Icarus.exe` from the Releases page and put it in a folder of its own — it unpacks what it needs beside itself on the first run.
 
 2. **Install Wine and Winetricks.**
 
@@ -241,18 +182,9 @@ Icarus targets Windows, but it runs well under [Wine](https://www.winehq.org/). 
 
 5. **Run Icarus.** Open a terminal *in the folder containing the executable* (most file managers offer "Open Terminal Here", or `cd` into it), confirm with `ls` that you're in the right place, then:
 
-<!--DEVONLY:START-->
-   ```bash
-   wine Icarus.exe
-   # or, if you're running from this source tree:
-   wine cmd /c "Start Icarus.bat"
-   ```
-<!--DEVONLY:END-->
-<!--PUBLICONLY
    ```bash
    wine Icarus.exe
    ```
-PUBLICONLY-->
 
    Complete the normal first-run setup (Steam details, 2FA) and you're set — the dashboard opens at the address Icarus prints in its console.
 
