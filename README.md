@@ -385,7 +385,7 @@ Every tool in the suite speaks the game's own API — the same protocol work und
 | **[Club Manager](https://github.com/Remezzo/Umamusume-Fan-Tracker)** | Tracks every club you care about and posts a leaderboard to Discord on its own schedule — quotas, month-end projections, roster changes, milestones and trainer lookups. |
 | **Navigator** | The research rig that captures and replays the game's wire protocol. Everything above is built on what it finds. |
 
----
+-----
 
 <div align="center">
 
